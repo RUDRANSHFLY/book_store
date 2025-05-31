@@ -1,0 +1,29 @@
+{
+  "name": "book-store",
+  "version": "1.0.0",
+  "description": "a book store or library type backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev" : "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RUDRANSHFLY/book_store.git"
+  },
+  "author": "leo_eve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RUDRANSHFLY/book_store/issues"
+  },
+  "homepage": "https://github.com/RUDRANSHFLY/book_store#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.1",
+    "nodemon": "^3.1.10"
+  }
+}
