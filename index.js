@@ -1,5 +1,7 @@
 import express from "express"
 import "dotenv/config"
+import connectDB from "./db/connectDb.js"
+
 
 
 
@@ -11,7 +13,7 @@ const PORT = process.env.PORT || 3000
 
 app.use(express.json());
 
-
+await connectDB();
 
 
 
