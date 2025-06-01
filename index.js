@@ -2,6 +2,7 @@ import express from "express"
 import "dotenv/config"
 import connectDB from "./db/connectDb.js"
 import authRouter from "./routes/auth-route.js"
+import { bookRouter } from "./routes/book-route.js"
 
 
 
@@ -18,6 +19,7 @@ await connectDB();
 
 
 app.use('/api/auth',authRouter)
+app.use('/api/',bookRouter)
 
 app.get('/',(req,res) => {
     res.send("Server")
