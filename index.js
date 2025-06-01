@@ -1,6 +1,7 @@
 import express from "express"
 import "dotenv/config"
 import connectDB from "./db/connectDb.js"
+import authRouter from "./routes/auth-route.js"
 
 
 
@@ -16,7 +17,11 @@ app.use(express.json());
 await connectDB();
 
 
+app.use('/api/auth',authRouter)
 
+app.get('/',(req,res) => {
+    res.send("Server")
+})
 
 app.listen(PORT,() => {
     console.log(`Server started 🌟`);
