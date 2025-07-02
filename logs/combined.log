@@ -79,3 +79,10 @@
 2025-07-02T12:28:04.632Z info : GET /api/books 200 423ms
 2025-07-02T12:29:57.198Z info : Book Updated ✅
 2025-07-02T12:29:57.204Z info : PUT /api/books/68651a7052c2031114f85099 201 162ms
+2025-07-02T12:32:51.642Z info : POST /api/books 400 25ms
+2025-07-02T12:32:58.406Z info : POST /api/books 404 9ms
+2025-07-02T12:33:13.349Z info : New Book Add ✅
+2025-07-02T12:33:13.351Z info : POST /api/books 201 92ms
+2025-07-02T12:33:27.381Z info : New Book Add ✅
+2025-07-02T12:33:27.384Z info : POST /api/books 201 41ms
+2025-07-02T12:33:32.246Z info : GET /api/books 200 56ms
