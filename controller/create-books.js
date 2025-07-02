@@ -1,16 +1,16 @@
 import Book from "../model/book-schema.js";
+import logger from "../util/logger.js";
 
 export default async function createBooks(req, res) {
-  console.log(`Request URL: ${req.url}, Request Method: ${req.method}`);
+  const { title, author, genre, publishedYear } = req.body;
+   const id = req.user?.id;
 
-  const { title, author, price, publishedDate } = req.body;
-
-  if (!title || !author || !price || !publishedDate) {
+  if (!title || !author || !genre || !publishedYear || !id) {
     const missingFields = [];
     if (!title) missingFields.push("title");
     if (!author) missingFields.push("author");
-    if (!price) missingFields.push("price");
-    if (!publishedDate) missingFields.push("publishedDate");
+    if (!genre) missingFields.push("genre");
+    if (!publishedYear) missingFields.push("publishedYear");
 
     console.error(`Missing fields: ${missingFields.join(", ")}`);
 
@@ -19,7 +19,7 @@ export default async function createBooks(req, res) {
     });
   }
 
-  const data = [title, author, price, publishedDate];
+  const data = [title, author , genre , publishedYear];
 
   console.table(data);
 
@@ -27,13 +27,14 @@ export default async function createBooks(req, res) {
     const book = new Book({
       title: title,
       author: author,
-      price: price,
-      publishedDate: publishedDate,
+      genre: genre,
+      publishedYear: publishedYear,
+      userId : id,
     });
 
     await book.save();
 
-    console.log("New Book Add ✅");
+    logger.info("New Book Add ✅");
     return res.status(201).json({
       success: "True",
       message: "New Book Addeed",
@@ -43,7 +44,7 @@ export default async function createBooks(req, res) {
     if (error.code === 11000) {
       const field = Object.keys(error.keyValue)[0];
       const value = error.keyValue[field];
-      console.log(`${field} '${value}' already exists.`);
+      logger.error(`${field} '${value}' already exists.`);
       return res
         .status(409)
         .json({ error: `${field} '${value}' already exists.` });

@@ -1,0 +1,18 @@
+2025-07-02T12:02:35.397Z error : Book not Found
+2025-07-02T12:03:37.240Z error : Unauthorized to deleteBook
+2025-07-02T12:03:37.242Z error : Error creating user: Cannot set headers after they are sent to the client
+2025-07-02T12:04:07.636Z error : title 'Whispers in the Wind' already exists.
+2025-07-02T12:04:50.706Z error : Unauthorized to deleteBook
+2025-07-02T12:04:50.707Z error : Error creating user: Cannot set headers after they are sent to the client
+2025-07-02T12:06:25.046Z error : Unauthorized to deleteBook
+2025-07-02T12:08:25.306Z error : Error creating user: Cannot access 'bookUserId' before initialization
+2025-07-02T12:08:49.034Z error : Error creating user: Cannot create property 'Symbol(level)' on string 'Book UserId : undefined - Authenticated UserId : 68650dd4d4d837c0b10c9182'
+2025-07-02T12:08:59.301Z error : Error creating user: Cannot create property 'Symbol(level)' on string 'Book UserId : undefined - Authenticated UserId : 68650dd4d4d837c0b10c9182'
+2025-07-02T12:09:26.501Z error : Error creating user: Cannot create property 'Symbol(level)' on string 'Book UserId : 68650dd4d4d837c0b10c9182 - Authenticated UserId : 68650dd4d4d837c0b10c9182'
+2025-07-02T12:10:24.668Z error : Error creating user: Cannot create property 'Symbol(level)' on string 'Book UserId : 68650dd4d4d837c0b10c9182 - Authenticated UserId : 68650dd4d4d837c0b10c9182'
+2025-07-02T12:12:17.360Z error : Error deleting book Cannot create property 'Symbol(level)' on string 'Book UserId : 68650dd4d4d837c0b10c9182 - Authenticated UserId : 68650dd4d4d837c0b10c9182'
+2025-07-02T12:15:26.184Z error : Unauthorized to deleteBook
+2025-07-02T12:24:57.122Z error : Missing fields: Id
+2025-07-02T12:25:23.152Z error : Missing fields: Id
+2025-07-02T12:25:24.715Z error : Missing fields: Id
+2025-07-02T12:26:16.001Z error : Book Doesn;t Exist

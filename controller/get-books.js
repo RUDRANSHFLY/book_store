@@ -1,7 +1,6 @@
 import Book from "../model/book-schema.js";
 
 export default async function getBooks(req, res) {
-  console.log(`Request URL: ${req.url}, Request Method: ${req.method}`);
   try {
     const books = await Book.find()
     return res.status(200).json({"success" : true , "data" : books })

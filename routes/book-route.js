@@ -3,22 +3,29 @@ import createBooks from "../controller/create-books.js";
 import getBooks from "../controller/get-books.js";
 import updateBook from "../controller/update-book.js";
 import deleteBook from "../controller/delete-book.js";
+import authenticateToken from "../controller/authenticate-token.js";
 
 export const bookRouter = Router();
 
-bookRouter.get("/books", (req, res) => {
+
+//? ✅ Get all bokes for authenticated user
+bookRouter.get("/books", authenticateToken , (req, res) => {
   return getBooks(req, res);
 });
 
-bookRouter.post("/books", (req, res) => {
+
+//? ✅ Create a new book
+bookRouter.post("/books" , authenticateToken , (req, res) => {
   return createBooks(req, res);
 });
 
-bookRouter.put("/books/:id", (req, res) => {
-  const { id } = req.params; 
-  return updateBook(req,res,id)
+//? ✅ Update a book by Id
+bookRouter.put("/books/:id",authenticateToken, (req, res) => {
+  return updateBook(req,res)
 });
 
-bookRouter.delete("/books/:id", (req, res) => {
+
+//? ❌ Delete a book by Id
+bookRouter.delete("/books/:id", authenticateToken , (req, res) => {
   return deleteBook(req,res)
 });

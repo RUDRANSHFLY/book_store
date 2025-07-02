@@ -10,12 +10,17 @@ const bookSchema = new mongoose.Schema({
         type : String ,
         required : false,
     },
-    price : {
-        type : Number ,
+    genre : {
+        type : String ,
         required : true,
     },
-    publishedDate : {
-        type : Date,
+    publishedYear : {
+        type : Number,
+        required : true,
+    },
+    userId : {
+        type : mongoose.Schema.Types.ObjectId,
+        ref : "User",
         required : true,
     }
 } , {timestamps : true});

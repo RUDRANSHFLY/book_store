@@ -1,0 +1,81 @@
+2025-07-02T11:22:23.990Z info : GET /api/auth/login 200 224ms
+2025-07-02T11:23:18.010Z info : GET /api/auth/login 200 181ms
+2025-07-02T11:29:16.744Z info : POST /api/books 404 20ms
+2025-07-02T11:29:33.914Z info : POST /api/books 404 5ms
+2025-07-02T11:29:38.148Z info : POST /api/books 400 4ms
+2025-07-02T11:35:24.369Z info : POST /api/books 400 36ms
+2025-07-02T11:35:50.254Z info : POST /api/books 400 6ms
+2025-07-02T11:39:28.799Z info : POST /api/books 201 83ms
+2025-07-02T11:44:27.624Z info : POST /api/books 400 19ms
+2025-07-02T11:47:17.709Z info : POST /api/books 400 35ms
+2025-07-02T11:50:13.392Z info : New Book Add ✅
+2025-07-02T11:50:13.397Z info : POST /api/books 201 102ms
+2025-07-02T11:51:56.538Z info : GET /api/books 404 1ms
+2025-07-02T11:52:15.994Z info : GET /api/books 200 66ms
+2025-07-02T12:00:44.823Z info : Book Deleted for id : 683bc52771b9c5257ddb3c6a
+2025-07-02T12:00:44.868Z info : DELETE /api/books/683bc52771b9c5257ddb3c6a 200 87ms
+2025-07-02T12:01:13.404Z info : GET /api/books 200 46ms
+2025-07-02T12:02:17.931Z info : DELETE /api/books/683bc52771b9c5257ddb3c6a 404 9ms
+2025-07-02T12:02:35.397Z error : Book not Found
+2025-07-02T12:02:35.398Z info : DELETE /api/books/683bc52771b9c5257ddb3c6a 404 48ms
+2025-07-02T12:03:08.070Z info : GET /api/books 200 278ms
+2025-07-02T12:03:37.240Z error : Unauthorized to deleteBook
+2025-07-02T12:03:37.242Z error : Error creating user: Cannot set headers after they are sent to the client
+2025-07-02T12:03:37.243Z info : DELETE /api/books/683bd4f1e7f951d7426875f2 500 62ms
+2025-07-02T12:04:07.636Z error : title 'Whispers in the Wind' already exists.
+2025-07-02T12:04:07.638Z info : POST /api/books 409 134ms
+2025-07-02T12:04:35.935Z info : GET /api/books 200 659ms
+2025-07-02T12:04:50.706Z error : Unauthorized to deleteBook
+2025-07-02T12:04:50.707Z error : Error creating user: Cannot set headers after they are sent to the client
+2025-07-02T12:04:50.708Z info : DELETE /api/books/68651cf5683b2cc9d24c3f97 500 42ms
+2025-07-02T12:06:25.046Z error : Unauthorized to deleteBook
+2025-07-02T12:06:25.065Z info : DELETE /api/books/68651cf5683b2cc9d24c3f97 403 99ms
+2025-07-02T12:08:25.306Z error : Error creating user: Cannot access 'bookUserId' before initialization
+2025-07-02T12:08:25.313Z info : DELETE /api/books/68651cf5683b2cc9d24c3f97 500 2116ms
+2025-07-02T12:08:49.034Z error : Error creating user: Cannot create property 'Symbol(level)' on string 'Book UserId : undefined - Authenticated UserId : 68650dd4d4d837c0b10c9182'
+2025-07-02T12:08:49.062Z info : DELETE /api/books/68651cf5683b2cc9d24c3f97 500 140ms
+2025-07-02T12:08:59.301Z error : Error creating user: Cannot create property 'Symbol(level)' on string 'Book UserId : undefined - Authenticated UserId : 68650dd4d4d837c0b10c9182'
+2025-07-02T12:08:59.306Z info : DELETE /api/books/68651cf5683b2cc9d24c3f97 500 53ms
+2025-07-02T12:09:26.501Z error : Error creating user: Cannot create property 'Symbol(level)' on string 'Book UserId : 68650dd4d4d837c0b10c9182 - Authenticated UserId : 68650dd4d4d837c0b10c9182'
+2025-07-02T12:09:26.514Z info : DELETE /api/books/68651cf5683b2cc9d24c3f97 500 85ms
+2025-07-02T12:10:24.668Z error : Error creating user: Cannot create property 'Symbol(level)' on string 'Book UserId : 68650dd4d4d837c0b10c9182 - Authenticated UserId : 68650dd4d4d837c0b10c9182'
+2025-07-02T12:10:24.673Z info : DELETE /api/books/68651cf5683b2cc9d24c3f97 500 72ms
+2025-07-02T12:12:17.360Z error : Error deleting book Cannot create property 'Symbol(level)' on string 'Book UserId : 68650dd4d4d837c0b10c9182 - Authenticated UserId : 68650dd4d4d837c0b10c9182'
+2025-07-02T12:12:17.367Z info : DELETE /api/books/68651cf5683b2cc9d24c3f97 500 30837ms
+2025-07-02T12:15:26.182Z info : Book UserId : 68650dd4d4d837c0b10c9182 - Authenticated UserId : 68650dd4d4d837c0b10c9182
+2025-07-02T12:15:26.184Z error : Unauthorized to deleteBook
+2025-07-02T12:15:26.188Z info : DELETE /api/books/68651cf5683b2cc9d24c3f97 403 49ms
+2025-07-02T12:16:57.962Z info : Book UserId : 68650dd4d4d837c0b10c9182 - Authenticated UserId : 68650dd4d4d837c0b10c9182
+2025-07-02T12:16:57.964Z info : Book Deleted for id : 68651cf5683b2cc9d24c3f97
+2025-07-02T12:16:58.003Z info : DELETE /api/books/68651cf5683b2cc9d24c3f97 200 99ms
+2025-07-02T12:17:16.116Z info : GET /api/books 200 43ms
+2025-07-02T12:17:17.632Z info : GET /api/books 200 34ms
+2025-07-02T12:17:53.561Z info : Book UserId : undefined - Authenticated UserId : undefined
+2025-07-02T12:17:53.563Z info : Book Deleted for id : 683bc98738e79d92f4c030f0
+2025-07-02T12:17:53.607Z info : DELETE /api/books/683bc98738e79d92f4c030f0 200 87ms
+2025-07-02T12:17:58.974Z info : GET /api/books 200 81ms
+2025-07-02T12:18:11.158Z info : Book UserId : undefined - Authenticated UserId : undefined
+2025-07-02T12:18:11.158Z info : Book Deleted for id : 683bd4f1e7f951d7426875f2
+2025-07-02T12:18:11.194Z info : DELETE /api/books/683bd4f1e7f951d7426875f2 200 75ms
+2025-07-02T12:18:18.680Z info : GET /api/books 200 40ms
+2025-07-02T12:23:48.105Z info : PUT /api/books/683bd4f1e7f951d7426875f2 404 6ms
+2025-07-02T12:24:30.135Z info : PUT /api/books/683bd4f1e7f951d7426875f2 404 5ms
+2025-07-02T12:24:40.757Z info : GET /api/auth/login 200 133ms
+2025-07-02T12:24:57.122Z error : Missing fields: Id
+2025-07-02T12:24:57.123Z info : PUT /api/books/683bd4f1e7f951d7426875f2 400 4ms
+2025-07-02T12:25:23.152Z error : Missing fields: Id
+2025-07-02T12:25:23.154Z info : PUT /api/books/683bd4f1e7f951d7426875f2 400 3ms
+2025-07-02T12:25:24.715Z error : Missing fields: Id
+2025-07-02T12:25:24.716Z info : PUT /api/books/683bd4f1e7f951d7426875f2 400 2ms
+2025-07-02T12:26:16.001Z error : Book Doesn;t Exist
+2025-07-02T12:26:16.007Z info : PUT /api/books/683bd4f1e7f951d7426875f2 404 45ms
+2025-07-02T12:26:25.272Z info : GET /api/books 404 3ms
+2025-07-02T12:26:35.549Z info : GET /api/books 200 80ms
+2025-07-02T12:26:49.247Z info : Book Updated ✅
+2025-07-02T12:26:49.253Z info : PUT /api/books/68651a7052c2031114f85099 201 127ms
+2025-07-02T12:27:41.580Z info : Book Updated ✅
+2025-07-02T12:27:41.584Z info : PUT /api/books/68651a7052c2031114f85099 201 286ms
+2025-07-02T12:27:59.860Z info : GET /api/auth/login 200 188ms
+2025-07-02T12:28:04.632Z info : GET /api/books 200 423ms
+2025-07-02T12:29:57.198Z info : Book Updated ✅
+2025-07-02T12:29:57.204Z info : PUT /api/books/68651a7052c2031114f85099 201 162ms
