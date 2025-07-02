@@ -60,7 +60,7 @@ export default async function updateBook(req, res) {
         .status(409)
         .json({ error: `${field} '${value}' already exists.` });
     } else {
-      logger.error("Error creating user:", error);
+      logger.error("Error updating book:", error);
       return res.status(500).json({ error: "Internal server error" });
     }
   }

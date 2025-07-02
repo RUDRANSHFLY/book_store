@@ -16,3 +16,7 @@
 2025-07-02T12:25:23.152Z error : Missing fields: Id
 2025-07-02T12:25:24.715Z error : Missing fields: Id
 2025-07-02T12:26:16.001Z error : Book Doesn;t Exist
+2025-07-02T12:36:29.962Z error : Unauthorized to deleteBook
+2025-07-02T12:36:50.491Z error : Unauthorized to deleteBook
+2025-07-02T12:40:03.916Z error : title 'The Alchemist' already exists.
+2025-07-02T12:42:42.731Z error : Unauthorized to deleteBook

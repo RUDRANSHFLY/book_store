@@ -49,7 +49,7 @@ export default async function createBooks(req, res) {
         .status(409)
         .json({ error: `${field} '${value}' already exists.` });
     } else {
-      console.error("Error creating user:", error);
+      console.error("Error creating book:", error);
       return res.status(500).json({ error: "Internal server error" });
     }
   }

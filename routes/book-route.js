@@ -4,6 +4,7 @@ import getBooks from "../controller/get-books.js";
 import updateBook from "../controller/update-book.js";
 import deleteBook from "../controller/delete-book.js";
 import authenticateToken from "../controller/authenticate-token.js";
+import searchBooks from "../controller/search-books.js";
 
 export const bookRouter = Router();
 
@@ -12,6 +13,10 @@ export const bookRouter = Router();
 bookRouter.get("/books", authenticateToken , (req, res) => {
   return getBooks(req, res);
 });
+
+bookRouter.get("/books/search",authenticateToken,(req,res) => {
+  return searchBooks(req,res)
+})
 
 
 //? ✅ Create a new book

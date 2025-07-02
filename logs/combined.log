@@ -86,3 +86,41 @@
 2025-07-02T12:33:27.381Z info : New Book Add ✅
 2025-07-02T12:33:27.384Z info : POST /api/books 201 41ms
 2025-07-02T12:33:32.246Z info : GET /api/books 200 56ms
+2025-07-02T12:34:43.752Z info : POST /api/auth/register 409 164ms
+2025-07-02T12:34:52.962Z info : POST /api/auth/register 201 404ms
+2025-07-02T12:35:06.894Z info : GET /api/auth/login 200 138ms
+2025-07-02T12:35:45.298Z info : New Book Add ✅
+2025-07-02T12:35:45.298Z info : POST /api/books 201 104ms
+2025-07-02T12:35:55.538Z info : New Book Add ✅
+2025-07-02T12:35:55.539Z info : POST /api/books 201 34ms
+2025-07-02T12:36:25.075Z info : PUT /api/books/68651a7052c2031114f85099 404 19ms
+2025-07-02T12:36:29.962Z error : Unauthorized to deleteBook
+2025-07-02T12:36:29.964Z info : PUT /api/books/68651a7052c2031114f85099 403 38ms
+2025-07-02T12:36:50.490Z info : Book UserId : 68650dd4d4d837c0b10c9182 - Authenticated UserId : 6865276ce277c416e1ce66d4
+2025-07-02T12:36:50.491Z error : Unauthorized to deleteBook
+2025-07-02T12:36:50.494Z info : DELETE /api/books/68651a7052c2031114f85099 403 47ms
+2025-07-02T12:37:57.091Z info : POST /api/auth/register 409 307ms
+2025-07-02T12:38:34.820Z info : GET /api/auth/login 401 253ms
+2025-07-02T12:38:49.114Z info : GET /api/auth/login 401 32ms
+2025-07-02T12:39:08.795Z info : GET /api/auth/login 200 265ms
+2025-07-02T12:40:03.916Z error : title 'The Alchemist' already exists.
+2025-07-02T12:40:03.917Z info : POST /api/books 409 52ms
+2025-07-02T12:40:16.222Z info : GET /api/books 200 55ms
+2025-07-02T12:42:42.731Z error : Unauthorized to deleteBook
+2025-07-02T12:42:42.732Z info : PUT /api/books/68651a7052c2031114f85099 403 33ms
+2025-07-02T12:43:08.985Z info : GET /api/books 200 33ms
+2025-07-02T12:43:14.245Z info : GET /api/books 200 35ms
+2025-07-02T12:43:29.083Z info : Book Updated ✅
+2025-07-02T12:43:29.085Z info : PUT /api/books/686527abe277c416e1ce66d9 201 140ms
+2025-07-02T12:59:29.000Z info : GET /api/books/search?genre=%22love%22 404 10ms
+2025-07-02T13:00:01.340Z info : GET /api/books/search?genre=%22love%22 200 38ms
+2025-07-02T13:00:25.559Z info : GET /api/books/search?genre=%22Love%22 200 38ms
+2025-07-02T13:00:26.501Z info : GET /api/books/search?genre=%22Love%22 200 41ms
+2025-07-02T13:00:30.941Z info : GET /api/books/search?genre=%22Love%22 200 89ms
+2025-07-02T13:01:39.569Z info : GET /api/books/search?genre=Love 200 45ms
+2025-07-02T13:27:43.662Z info : POST /api/auth/register 201 425ms
+2025-07-02T13:28:10.799Z info : POST /api/auth/register 409 367ms
+2025-07-02T13:29:12.181Z info : POST /api/auth/register 201 359ms
+2025-07-02T13:30:08.050Z info : POST /api/auth/register 201 361ms
+2025-07-02T13:33:14.551Z info : POST /api/auth/register 201 843ms
+2025-07-02T13:34:31.014Z info : POST /api/auth/register 201 635ms
